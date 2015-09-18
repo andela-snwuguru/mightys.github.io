@@ -1,0 +1,40 @@
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <h2>Pending Invites</h2>
+                <h5>See below your awaiting invites. </h5>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+
+<div class="col-md-12">
+    <hr />
+
+    <div class="row list-group">
+
+    <div class="item  col-xs-4 col-lg-4"  ng-repeat="invite in pendingInvites">
+        <div class="thumbnail">
+            <img class="group list-group-image" src="{{invite.img}}" alt="" />
+            <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                    {{invite.event_title}}</h4>
+                <p class="group inner list-group-item-text">
+                {{invite.message}}
+                </p>
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-6">
+                        <button class="btn btn-success approve" ng-click="approve()" link="{{invite.link}}">Approve</button>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <button class="btn btn-danger decline" ng-click="decline()" link="{{invite.link}}">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+</div>

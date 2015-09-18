@@ -1,0 +1,29 @@
+<div class="row">
+            <div class="col-md-12">
+                <h2>Send Invite</h2>
+                <h5>Invite the users below to your event</h5>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="col-md-12">
+        <hr />
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-6"  ng-repeat="user in users">
+                <div class="panel panel-back noti-box">
+                    <p>
+                        <img src="{{user.img}}" class="img-thumbnail">
+                    </p>
+                    <div class="text-box" >
+                        <p class="main-text">{{user.name}}</p>
+                        <p class="text-muted"><input type="checkbox" class="form-control" ng-click="selected($index)" ng-checked="selection.indexOf($index) > -1"/></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            <div class="col-md-12">
+                <hr/>
+                <button class="btn btn-warning btn-lg col-md-4" ng-click="inviteUsers()">Invite Selected Users</button>
+            </div>
+</div>

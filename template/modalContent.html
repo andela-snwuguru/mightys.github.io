@@ -1,0 +1,26 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{vm.event.title}}</h3>
+</div>
+<div class="modal-body">
+    <!--<p>Action: <pre>{{ vm.action }}</pre></p>-->
+
+    <p><b>Description</b>: <br />{{vm.event.description}}</p>
+    <p><b>Address</b>: <br />{{vm.event.address}}</p>
+    <p><b>Starts At </b>: <br />{{vm.event.startsAt | date:'MMMM d, y h:mm:ss a'}}</p>
+    <p><b>Ends At</b>:<br />{{vm.event.endsAt | date:'MMMM d, y h:mm:ss a'}}</p>
+
+    <!--<p>Event: <pre>{{ vm.event | json }}</pre></p>-->
+
+
+    <div>
+
+        <a class="btn btn-success" href="dashboard.html#/attendees" ng-click="$close()">See Attendees</a>
+        <a class="btn btn-info" href="dashboard.html#/send-invite" ng-click="$close()">Invite User</a>
+
+    </div>
+
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="$close()">OK</button>
+</div>

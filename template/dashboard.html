@@ -1,0 +1,79 @@
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Your DashBoard</h2>
+                <h5>Welcome {{userData.name}} , Love to see you back. </h5>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="col-md-12">
+        <hr />
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="panel panel-back noti-box">
+                <span class="icon-box bg-color-brown set-icon">
+                    <i class="fa fa-table"></i>
+                </span>
+                    <div class="text-box" >
+                        <p class="main-text">My Calender</p>
+                        <p class="main-text">{{totalEvents}} Events</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="panel panel-back noti-box">
+                <span class="icon-box bg-color-red set-icon">
+                    <i class="fa fa-clock-o"></i>
+                </span>
+                    <div class="text-box" >
+                        <p class="main-text">{{totalPendingInvites}} Pending</p>
+                        <p class="text-muted">Invitees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="panel panel-back noti-box">
+                <span class="icon-box bg-color-green set-icon">
+                    <i class="fa fa-clock-o"></i>
+                </span>
+                    <div class="text-box" >
+                        <p class="main-text">{{totalSentInvites}} Pending</p>
+                        <p class="text-muted">request</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+        <!-- /. ROW  -->
+
+<div class="col-md-12">
+    <hr />
+<h2>My Events</h2>
+    <div class="row list-group">
+
+        <div class="item  col-xs-4 col-lg-4"  ng-repeat="event in events">
+            <div class="thumbnail">
+                <span class="icon-box set-icon" style="font-size: 124px; color: #ff0000; padding-left: 20px;">
+                    <i class="fa fa-calendar"></i>
+                </span>
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        {{event.title}}</h4>
+                    <p class="group inner list-group-item-text">
+                        {{event.description}}
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>

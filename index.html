@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Kandela - Easy event manager</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+    <link href="css/crosscover.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/kandela.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- The fav icon -->
+    <link rel="shortcut icon" href="bc12-kalendar/../images//icon.jpg">
+    <script src="//cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+    <script src="js/configuration.js"></script>
+    <script src="js/firebaseutil.js"></script>
+    <script src="js/attendee.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/invite.js"></script>
+    <script src="js/join.js"></script>
+</head>
+<body>
+<div ng-app="app" ng-controller="ctrl" ng-class="animation">
+<div class="logo pull-left">
+    <img src="images/logo.png" style="max-width: 150px;" />
+</div>
+  <div class="links">
+    <a href="#/login">Login</a>
+    <a href="#/register">Register</a>
+    <a href="#/about">About Kandela</a>
+    <a href="#/feedback">Feedback</a>
+  </div>
+  <div ng-view class="view kandela-home">
+
+  </div>
+    <div class='box crosscover'>
+        <div class="crosscover-list">
+            <div class="crosscover-item">
+                <img src="bc12-kalendar/../images/1.jpg" alt="image01"/>
+            </div>
+            <div class="crosscover-item">
+                <img src="bc12-kalendar/../images/2.jpg" alt="image02"/>
+            </div>
+            <div class="crosscover-item">
+                <img src="bc12-kalendar/../images/3.jpg" alt="image03"/>
+            </div>
+            <div class="crosscover-item">
+                <img src="bc12-kalendar/../images/4.jpg" alt="image04"/>
+            </div>
+            <div class="crosscover-item">
+                <img src="bc12-kalendar/../images/5.jpg" alt="image05"/>
+            </div>
+            <div class="crosscover-item">
+                <img src="bc12-kalendar/../images/6.jpg" alt="image06"/>
+            </div>
+
+        </div>
+        <img src="bc12-kalendar/../images/icon.jpg">
+
+
+    </div>
+<div class="footer-home">
+    <ul>
+        <li><a href="#/terms">Terms and Condition</a> </li>
+        <li><a href="#/policy">Privacy Policy</a> </li>
+        <li><a href="#/docs">API Documentation</a> </li>
+    </ul>
+</div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+<script src="js/crosscover.js" charset="utf-8"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-route.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-animate.min.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+<script>
+    $(document).on('ready', function(){
+        $('.crosscover').crosscover({
+            // controller: true,
+            dotNav: true
+        });
+    });
+</script>
+
+</body>
+</html>
